@@ -7,7 +7,7 @@ port = 8787
 local_protocol = "http"
 
 [env.vars]
-CUSTOM_DOMAIN = "libcuda.so"
+CUSTOM_DOMAIN = "tdm.qzz.io"
 
 [env.dev.vars]
 MODE = "debug"
@@ -17,13 +17,13 @@ CUSTOM_DOMAIN = "exmaple.com"
 [env.production]
 name = "cloudflare-docker-proxy"
 # routes = [
-#   { pattern = "docker.libcuda.so", custom_domain = true },
-#   { pattern = "quay.libcuda.so", custom_domain = true },
-#   { pattern = "gcr.libcuda.so", custom_domain = true },
-#   { pattern = "k8s-gcr.libcuda.so", custom_domain = true },
-#   { pattern = "k8s.libcuda.so", custom_domain = true },
-#   { pattern = "ghcr.libcuda.so", custom_domain = true },
-#   { pattern = "cloudsmith.libcuda.so", custom_domain = true },
+#   { pattern = "docker.tdm.qzz.io", custom_domain = true },
+#   { pattern = "quay.tdm.qzz.io", custom_domain = true },
+#   { pattern = "gcr.tdm.qzz.io", custom_domain = true },
+#   { pattern = "k8s-gcr.tdm.qzz.io", custom_domain = true },
+#   { pattern = "k8s.tdm.qzz.io", custom_domain = true },
+#   { pattern = "ghcr.tdm.qzz.io", custom_domain = true },
+#   { pattern = "cloudsmith.tdm.qzz.io", custom_domain = true },
 # ]
 
 [env.production.vars]
@@ -32,7 +32,7 @@ TARGET_UPSTREAM = ""
 
 [env.staging]
 name = "cloudflare-docker-proxy-staging"
-# route = { pattern = "docker-staging.libcuda.so", custom_domain = true }
+# route = { pattern = "docker-staging.tdm.qzz.io", custom_domain = true }
 
 [env.staging.vars]
 MODE = "staging"
